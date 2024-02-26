@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Latentview</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        .logo{
+           
+            width: 80px;
+            height: 80px;
+            
+        }
+        .cloud_container {
+            position: relative; 
+        }
+        .cloud_left{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+        }
+        .cloud_right{
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+        }
+        .container{
+            text-align: center;
+        } 
+        .city{
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+</head>
+<body>  
+  <div class="container"> 
+    <div style="color: black;">
+        <a href="https://www.latentview.com/">
+         <img class="logo" src="lva2.png" alt="Latentview Analytics"></a>
+        <h1 style="color: blue; font-size: 40px;">Welcome onboard</h1>
+        <h2>Latentview Analytics bootcamp 101</h2>
+        <h3>Ready..steady..launch..</h3>
+        <h3>Please enter your details here</h3>
+    </div>
+    <div>
+        <form>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+
+            <label for="email">email:</label><br>
+            <input type="text" id="email" name="email"><br>
+
+            <label for="phone">phone:</label><br>
+            <input type="text" id="phone" name="phone"><br>
+
+            <label for="birthdate">birthdate:</label><br>
+            <input type="date" id="birthdate" name="birthdate"><br>
+
+            <label for="gender">Gender:</label><br>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="others">Others</option>
+            </select><br>    
+
+            <label for="country">country:</label><br>
+            <input type="text" id="country" name="country"><br>
+
+            <div style="display: inline-block;">
+             <p>Choose your job Location</p>
+
+             <div class="city">
+                <input type="radio" id="Chennai" name="Location" value="Chennai">
+                <label for="Chennai">Chennai</label>
+            
+                <input type="radio" id="Bangalore" name="Location" value="Bangalore">
+                <label for="Bangalore">Bangalore</label>
+             
+                <input type="radio" id="Mumbai" name="Location" value="Mumbai">
+                <label for="Mumbai">Mumbai</label>
+             </div>
+            </div>
+        <br>
+        <button type="submit">submit</button>
+
+        </form>
+    </div>
+    <div class="cloud_container">
+        <img class="cloud_left" src="cloud.webp" width="120" height="100">
+        <img class="cloud_right" src="cloud.webp" width="120" height="100">
+    </div>
+ </div> 
+
+</body>
+</html>
